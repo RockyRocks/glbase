@@ -36,96 +36,96 @@
 
 # ---- TODO LIST ----------------------------------------------------------------
 
-TODO: ability to specify texture search paths for 3DS loader
-TODO: multisample support through ARB extensions
-TODO: support TGA horizontal flip flag
-TODO: compressed TGA loader could be tidied up (less code)
-TODO: method to query font size used by Printf()?
-TODO: BMP RLE8 native support
-TODO: remove workaround for wglUseFontBitmaps problem
-TODO: save LUM/LUMALP formats as 8bpp greyscale BMP (currently 24bpp)
-TODO: modify delta time method to use performance counters
-TODO: handle activate/inactive messages to disable idle processing?
-QSTN: maybe some functions to change display modes?
-QSTN: support opacity maps for 3DS models
-TODO: maybe remove STL use to allow MSVC6/7 library binary compatibility
-TODO: test: DSVertNormTex draw style
-RQST: function to retrieve diffuse colour for object
-RQST: support FSAA mode for GLWindow
-TODO: clean up window management code
+TODO: ability to specify texture search paths for 3DS loader<br/>
+TODO: multisample support through ARB extensions<br/>
+TODO: support TGA horizontal flip flag<br/>
+TODO: compressed TGA loader could be tidied up (less code)<br/>
+TODO: method to query font size used by Printf()?<br/>
+TODO: BMP RLE8 native support<br/>
+TODO: remove workaround for wglUseFontBitmaps problem<br/>
+TODO: save LUM/LUMALP formats as 8bpp greyscale BMP (currently 24bpp)<br/>
+TODO: modify delta time method to use performance counters<br/>
+TODO: handle activate/inactive messages to disable idle processing?<br/>
+QSTN: maybe some functions to change display modes?<br/>
+QSTN: support opacity maps for 3DS models<br/>
+TODO: maybe remove STL use to allow MSVC6/7 library binary compatibility<br/>
+TODO: test: DSVertNormTex draw style<br/>
+RQST: function to retrieve diffuse colour for object<br/>
+RQST: support FSAA mode for GLWindow<br/>
+TODO: clean up window management code<br/>
 
 # ---- DONE LIST ----------------------------------------------------------------
 
-DONE: set/get stereo mode
-DONE: access to command line parameters
-DONE: mouse events
-DONE: idle events
-DONE: keyboard events
-DONE: makecurrent method
-DONE: bugfix: app. left running when no windows created in WinMain version
-DONE: decide on some sensible window close behaviour
-DONE: set window caption
-DONE: set/get single/double buffering
+DONE: set/get stereo mode<br/>
+DONE: access to command line parameters<br/>
+DONE: mouse events<br/>
+DONE: idle events<br/>
+DONE: keyboard events<br/>
+DONE: makecurrent method<br/>
+DONE: bugfix: app. left running when no windows created in WinMain version<br/>
+DONE: decide on some sensible window close behaviour<br/>
+DONE: set window caption<br/>
+DONE: set/get single/double buffering<br/>
 DONE: window size/position: use client area or overall window?
-  (size uses client area, position uses window top-left)
+  (size uses client area, position uses window top-left)<br/>
 DONE: can keyboard events be handled better?
-  (after discussion with WJV, decided to leave as is: use WIN32 key codes)
-DONE: set/get z-buffer depth
-DONE: full screen mode
-DONE: finish writing clean up code for windows and associated classes
-DONE: call user Window::OnDestroy handler at appropriate point
-DONE: get window position
-DONE: added stencil buffer support as requested by DPMW
-DONE: added alpha buffer support as requested by DPMW
-DONE: added accum buffer support as requested by DPMW
-DONE: renaming of classes: Window to GLWindow, use of gxbase namespace
-DONE: added GLWindow::IsVisible() method
-DONE: added image class with format translation
-DONE: added image class BMP loader
-DONE: wrote image class sample
-DONE: improved ImageEx::LoadBMP implementation, supports more BMP formats
-DONE: tested BMP loader with 24,8,4,1 bit files, and width=256,255,254,253
-DONE: handle PF changes from OnCreate() : made it an error to do this
-DONE: fix issue with loss of context in OnCreate() when using SetSize()
-DONE: added window/app close methods
-DONE: added App::GetDeltaTime() method as requested by WJV
-DONE: added simple font support: Printf() method using wglUseFontBitmaps
-DONE: added screen capture for Image class; Image::GrabScreen() method
-DONE: added Image::glTexImage2D() method
-DONE: implemented Image::Save() method (saves 24bpp BMPs)
-DONE: implemented JPG support for Image class
-DONE: now uses white background when rendering IPicture metafiles
-DONE: IPicture JPEG loader COM object clean up (uses COM auto pointers)
-DONE: added Image::gluScaleImage() and Image::ScaleImagePow2() methods
-DONE: provide MS VC++6 libs as well as VS.NET libs
-DONE: RETIRED: no longer adding shader code: it's application specific really
-DONE: support mouse button events when outside window by using SetCapture()
-DONE: image set pixel functions
-DONE: image get pixel functions
-DONE: dpmw: auto-loading of GL extensions
-DONE: improve robustness of HasExtension() method: should deprecate though?
-DONE: added Image::glDrawPixels() method
-DONE: added Image::glReadPixels() method
-DONE: dpmw: ability to generate alpha from image
-DONE: dpmw: generate alpha texture from LUM image (see above)
-DONE: dpmw: ability to grab window contents (glReadPixels already proposed)
-DONE: dpmw: fixed bug with -ve mouse coords. on mouse capture drag
-DONE: improved BMP loading to avoid CompatibleDC() bpp limit in most cases
-DONE: shift/alt/ctrl key query functions added
-DONE: palette display mode support
-DONE: dpmw: ability to load alpha from file: new TGA 32-bit RGBA support added
-DONE: when loading an image, auto-detect 8bpp greyscale and load as LUM
-DONE: support TGA compressed 24bit format (many 3DS file use this format)
-DONE: support TGA vertical flip flag
-DONE: query WGL extension functions
-DONE: added timer callback support
-DEPR: should/can we hide the extra windows from taskbar? NO
-DONE: added DSVertNormTex draw style for 3DS model class
-DONE: allow font size and typeface to be changed
-DONE: added joystick support
-DONE: wrote joystick sample code
-DONE: fixed font change memory leak bug
-DONE: extend keyboard functions to make game control easier
+  (after discussion with WJV, decided to leave as is: use WIN32 key codes)<br/>
+DONE: set/get z-buffer depth<br/>
+DONE: full screen mode<br/>
+DONE: finish writing clean up code for windows and associated classes<br/>
+DONE: call user Window::OnDestroy handler at appropriate point<br/>
+DONE: get window position<br/>
+DONE: added stencil buffer support as requested by DPMW<br/>
+DONE: added alpha buffer support as requested by DPMW<br/>
+DONE: added accum buffer support as requested by DPMW<br/>
+DONE: renaming of classes: Window to GLWindow, use of gxbase namespace<br/>
+DONE: added GLWindow::IsVisible() method<br/>
+DONE: added image class with format translation<br/>
+DONE: added image class BMP loader<br/>
+DONE: wrote image class sample<br/>
+DONE: improved ImageEx::LoadBMP implementation, supports more BMP formats<br/>
+DONE: tested BMP loader with 24,8,4,1 bit files, and width=256,255,254,253<br/>
+DONE: handle PF changes from OnCreate() : made it an error to do this<br/>
+DONE: fix issue with loss of context in OnCreate() when using SetSize()<br/>
+DONE: added window/app close methods<br/>
+DONE: added App::GetDeltaTime() method as requested by WJV<br/>
+DONE: added simple font support: Printf() method using wglUseFontBitmaps<br/>
+DONE: added screen capture for Image class; Image::GrabScreen() method<br/>
+DONE: added Image::glTexImage2D() method<br/>
+DONE: implemented Image::Save() method (saves 24bpp BMPs)<br/>
+DONE: implemented JPG support for Image class<br/>
+DONE: now uses white background when rendering IPicture metafiles<br/>
+DONE: IPicture JPEG loader COM object clean up (uses COM auto pointers)<br/>
+DONE: added Image::gluScaleImage() and Image::ScaleImagePow2() methods<br/>
+DONE: provide MS VC++6 libs as well as VS.NET libs<br/>
+DONE: RETIRED: no longer adding shader code: it's application specific really<br/>
+DONE: support mouse button events when outside window by using SetCapture()<br/>
+DONE: image set pixel functions<br/>
+DONE: image get pixel functions<br/>
+DONE: dpmw: auto-loading of GL extensions<br/>
+DONE: improve robustness of HasExtension() method: should deprecate though?<br/>
+DONE: added Image::glDrawPixels() method<br/>
+DONE: added Image::glReadPixels() method<br/>
+DONE: dpmw: ability to generate alpha from image<br/>
+DONE: dpmw: generate alpha texture from LUM image (see above)<br/>
+DONE: dpmw: ability to grab window contents (glReadPixels already proposed)<br/>
+DONE: dpmw: fixed bug with -ve mouse coords. on mouse capture drag<br/>
+DONE: improved BMP loading to avoid CompatibleDC() bpp limit in most cases<br/>
+DONE: shift/alt/ctrl key query functions added<br/>
+DONE: palette display mode support<br/>
+DONE: dpmw: ability to load alpha from file: new TGA 32-bit RGBA support added<br/>
+DONE: when loading an image, auto-detect 8bpp greyscale and load as LUM<br/>
+DONE: support TGA compressed 24bit format (many 3DS file use this format)<br/>
+DONE: support TGA vertical flip flag<br/>
+DONE: query WGL extension functions<br/>
+DONE: added timer callback support<br/>
+DEPR: should/can we hide the extra windows from taskbar? NO<br/>
+DONE: added DSVertNormTex draw style for 3DS model class<br/>
+DONE: allow font size and typeface to be changed<br/>
+DONE: added joystick support<br/>
+DONE: wrote joystick sample code<br/>
+DONE: fixed font change memory leak bug<br/>
+DONE: extend keyboard functions to make game control easier<br/>
 
 # ---- HISTORY ------------------------------------------------------------------
 
